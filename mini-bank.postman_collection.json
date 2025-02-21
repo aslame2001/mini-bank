@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "4356ac3e-ae34-4e00-ab2a-ae2353d66475",
+		"name": "Mini bank Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "40745368"
+	},
+	"item": [
+		{
+			"name": "Login Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"aslam@gmail.com\",\r\n    \"password\": \"7894561230\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Credit Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "v509C7PQtaJOvDD2mKEipgdcgsOcGkAvGUNwayrv5c99057d"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"credit\",\r\n    \"amount\": 50.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/transaction"
+			},
+			"response": []
+		},
+		{
+			"name": "Credit  Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "v509C7PQtaJOvDD2mKEipgdcgsOcGkAvGUNwayrv5c99057d"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"credit\",\r\n    \"amount\": 50.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/transaction"
+			},
+			"response": []
+		},
+		{
+			"name": "Logout Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "v509C7PQtaJOvDD2mKEipgdcgsOcGkAvGUNwayrv5c99057d"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/logout"
+			},
+			"response": []
+		}
+	]
+}
